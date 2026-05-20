@@ -10,64 +10,128 @@
 </head>
 <body>
 
+    <!-- Navigation Menu -->
     <nav>
         <div class="logo">LUMINA</div>
+        
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#collection">Collection</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">HOME</a></li>
+            
+            <!-- JEWELLERY Dropdown -->
+            <li class="dropdown">
+                <a href="#jewelry">JEWELLERY &#9662;</a>
+                <ul class="dropdown-content">
+                    <li><a href="#jewelry">All Jewelry</a></li>
+                    <li><a href="#jewelry">Vintage</a></li>
+                    <li><a href="#jewelry">Zircon</a></li>
+                    <li><a href="#jewelry">Bohemian</a></li>
+                    <li><a href="#jewelry">Beaded</a></li>
+                </ul>
+            </li>
+            
+            <!-- ACCESSORIES Dropdown -->
+            <li class="dropdown">
+                <a href="#accessories">ACCESSORIES &#9662;</a>
+                <ul class="dropdown-content">
+                    <li><a href="#accessories">All Accessories</a></li>
+                    <li><a href="#accessories">Bags</a></li>
+                    <li><a href="#accessories">Others</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
+    <!-- Hero Section -->
     <header id="home">
         <div class="hero-content">
             <h1>Elegance in Every Detail</h1>
-            <p>Handcrafted jewelry designed for the modern soul.</p>
-            <a href="#collection" class="btn">Shop Now</a>
+            <p>Handcrafted jewelry & accessories for the modern soul.</p>
+            <a href="#jewelry" class="btn">Shop Now</a>
         </div>
     </header>
 
-    <section id="collection">
-        <h2>Our Collection</h2>
+    <!-- JEWELLERY Section -->
+    <section id="jewelry">
+        <h2>JEWELLERY Collection</h2>
+        <p style="margin-bottom: 30px; color: #666;">Vintage | Zircon | Bohemian | Beaded</p>
+        
         <div class="product-grid">
-            
+            <!-- Vintage Product -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Gold Ring">
-                <h3>Gold Signet Ring</h3>
+                <span class="category-tag">Vintage</span>
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vintage Gold Ring">
+                <h3>Vintage Gold Ring</h3>
                 <p class="price">Rs. 15,000</p>
-                <button onclick="selectProduct('Gold Signet Ring - Rs. 15,000')" class="btn-outline">Buy Now</button>
+                <button onclick="selectProduct('Vintage Gold Ring - Rs. 15,000')" class="btn-outline">Buy Now</button>
             </div>
 
+            <!-- Zircon Product -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pearl Earrings">
-                <h3>Pearl Drop Earrings</h3>
-                <p class="price">Rs. 10,000</p>
-                <button onclick="selectProduct('Pearl Drop Earrings - Rs. 10,000')" class="btn-outline">Buy Now</button>
+                <span class="category-tag">Zircon</span>
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Zircon Earrings">
+                <h3>Zircon Earrings</h3>
+                <p class="price">Rs. 12,000</p>
+                <button onclick="selectProduct('Zircon Earrings - Rs. 12,000')" class="btn-outline">Buy Now</button>
             </div>
 
+            <!-- Bohemian Product -->
             <div class="product-card">
+                <span class="category-tag">Bohemian</span>
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Bohemian Necklace">
+                <h3>Bohemian necklace</h3>
+                <p class="price">Rs. 8,000</p>
+                <button onclick="selectProduct('Bohemian Necklace - Rs. 8,000')" class="btn-outline">Buy Now</button>
+            </div>
+
+            <!-- Beaded Product -->
+            <div class="product-card">
+                <span class="category-tag">Beaded</span>
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Beaded Bracelet">
+                <h3>Beaded Bracelet</h3>
+                <p class="price">Rs. 5,000</p>
+                <button onclick="selectProduct('Beaded Bracelet - Rs. 5,000')" class="btn-outline">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESSORIES Section -->
+    <section id="accessories">
+        <h2>ACCESSORIES Collection</h2>
+        <p style="margin-bottom: 30px; color: #666;">Bags | Others</p>
+        
+        <div class="product-grid">
+            <!-- Bags Product -->
+            <div class="product-card">
+                <span class="category-tag">Bags</span>
                 <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Leather Bag">
                 <h3>Leather Tote Bag</h3>
                 <p class="price">Rs. 18,000</p>
                 <button onclick="selectProduct('Leather Tote Bag - Rs. 18,000')" class="btn-outline">Buy Now</button>
             </div>
 
+            <!-- Others Product -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Silver Necklace">
-                <h3>Silver Chain</h3>
-                <p class="price">Rs. 8,000</p>
-                <button onclick="selectProduct('Silver Chain - Rs. 8,000')" class="btn-outline">Buy Now</button>
+                <span class="category-tag">Others</span>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Watch">
+                <h3>Classic Watch</h3>
+                <p class="price">Rs. 25,000</p>
+                <button onclick="selectProduct('Classic Watch - Rs. 25,000')" class="btn-outline">Buy Now</button>
             </div>
-
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about-section">
         <h2>About Us</h2>
-        <p>Lumina offers handcrafted jewelry and accessories. We deliver across Pakistan.</p>
+        <p>Lumina offers handcrafted jewelry and premium accessories. We believe in sustainable fashion and timeless designs.</p>
+        <br>
+        <p><strong>Categories:</strong> Vintage, Zircon, Bohemian, Beaded Jewelry | Bags, Others Accessories</p>
     </section>
 
+    <!-- Footer -->
     <footer id="contact">
         <h3>LUMINA</h3>
         <p>Order via WhatsApp or Email</p>

@@ -6,29 +6,24 @@ const myWhatsApp = "03238410656";
 const myJazzCash = "03238410656";
 // ========================================================
 
-let selectedItem = "";
-
 function selectProduct(productName) {
-    selectedItem = productName;
-    
-    // Show options to customer
     let choice = confirm(`
         Product: ${productName}
         
-        Choose Payment Method:
-        1. JazzCash (Transfer now)
-        2. Cash on Delivery
+        Choose Payment:
+        1. OK = JazzCash (Transfer now)
+        2. Cancel = Cash on Delivery
         
-        Click OK for JazzCash, Cancel for COD
+        Click OK or Cancel
     `);
     
     if (choice === true) {
-        // JazzCash Method
+        // JazzCash
         let message = `Hi Lumina! I want to buy: ${productName}. I will pay via JazzCash to ${myJazzCash}. Please confirm.`;
         let url = `https://wa.me/${myWhatsApp}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     } else {
-        // Cash on Delivery Method
+        // Cash on Delivery
         let message = `Hi Lumina! I want to buy: ${productName}. I want to pay on delivery. Please confirm.`;
         let url = `https://wa.me/${myWhatsApp}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
