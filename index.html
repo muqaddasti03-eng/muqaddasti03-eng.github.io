@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumina | Jewelry & Accessories</title>
+    <title>YOUR BRAND NAME | Jewelry & Accessories</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation Menu -->
+    <!-- Navigation -->
     <nav>
-        <div class="logo">LUMINA</div>
+        <div class="logo">YOUR <span>BRAND</span></div>
         
         <ul class="nav-links">
-            <li><a href="#home">HOME</a></li>
+            <li><a href="#home">Home</a></li>
             
-            <!-- JEWELLERY Dropdown -->
             <li class="dropdown">
-                <a href="#jewelry">JEWELLERY &#9662;</a>
+                <a href="#jewelry">Jewelry &#9662;</a>
                 <ul class="dropdown-content">
                     <li><a href="#jewelry">All Jewelry</a></li>
                     <li><a href="#jewelry">Vintage</a></li>
@@ -29,9 +28,8 @@
                 </ul>
             </li>
             
-            <!-- ACCESSORIES Dropdown -->
             <li class="dropdown">
-                <a href="#accessories">ACCESSORIES &#9662;</a>
+                <a href="#accessories">Accessories &#9662;</a>
                 <ul class="dropdown-content">
                     <li><a href="#accessories">All Accessories</a></li>
                     <li><a href="#accessories">Bags</a></li>
@@ -39,103 +37,53 @@
                 </ul>
             </li>
             
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <header id="home">
         <div class="hero-content">
-            <h1>Elegance in Every Detail</h1>
-            <p>Handcrafted jewelry & accessories for the modern soul.</p>
-            <a href="#jewelry" class="btn">Shop Now</a>
+            <h1>Elegance redefined</h1>
+            <p>Handcrafted jewelry & accessories</p>
+            <a href="#jewelry" class="btn">Explore Collection</a>
         </div>
     </header>
 
-    <!-- JEWELLERY Section -->
+    <!-- Jewelry Section -->
     <section id="jewelry">
-        <h2>JEWELLERY Collection</h2>
+        <h2>Jewelry Collection</h2>
         <p style="margin-bottom: 30px; color: #666;">Vintage | Zircon | Bohemian | Beaded</p>
         
         <div class="product-grid">
-            <!-- Vintage Product -->
-            <div class="product-card">
-                <span class="category-tag">Vintage</span>
-                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vintage Gold Ring">
-                <h3>Vintage Gold Ring</h3>
-                <p class="price">Rs. 15,000</p>
-                <button onclick="selectProduct('Vintage Gold Ring - Rs. 15,000')" class="btn-outline">Buy Now</button>
-            </div>
-
-            <!-- Zircon Product -->
-            <div class="product-card">
-                <span class="category-tag">Zircon</span>
-                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Zircon Earrings">
-                <h3>Zircon Earrings</h3>
-                <p class="price">Rs. 12,000</p>
-                <button onclick="selectProduct('Zircon Earrings - Rs. 12,000')" class="btn-outline">Buy Now</button>
-            </div>
-
-            <!-- Bohemian Product -->
-            <div class="product-card">
-                <span class="category-tag">Bohemian</span>
-                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Bohemian Necklace">
-                <h3>Bohemian necklace</h3>
-                <p class="price">Rs. 8,000</p>
-                <button onclick="selectProduct('Bohemian Necklace - Rs. 8,000')" class="btn-outline">Buy Now</button>
-            </div>
-
-            <!-- Beaded Product -->
-            <div class="product-card">
-                <span class="category-tag">Beaded</span>
-                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Beaded Bracelet">
-                <h3>Beaded Bracelet</h3>
-                <p class="price">Rs. 5,000</p>
-                <button onclick="selectProduct('Beaded Bracelet - Rs. 5,000')" class="btn-outline">Buy Now</button>
-            </div>
+            <!-- Add your products here later using the template -->
+            <p style="color: #999;">Scroll down to add your products...</p>
         </div>
     </section>
 
-    <!-- ACCESSORIES Section -->
+    <!-- Accessories Section -->
     <section id="accessories">
-        <h2>ACCESSORIES Collection</h2>
+        <h2>Accessories Collection</h2>
         <p style="margin-bottom: 30px; color: #666;">Bags | Others</p>
         
         <div class="product-grid">
-            <!-- Bags Product -->
-            <div class="product-card">
-                <span class="category-tag">Bags</span>
-                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Leather Bag">
-                <h3>Leather Tote Bag</h3>
-                <p class="price">Rs. 18,000</p>
-                <button onclick="selectProduct('Leather Tote Bag - Rs. 18,000')" class="btn-outline">Buy Now</button>
-            </div>
-
-            <!-- Others Product -->
-            <div class="product-card">
-                <span class="category-tag">Others</span>
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Watch">
-                <h3>Classic Watch</h3>
-                <p class="price">Rs. 25,000</p>
-                <button onclick="selectProduct('Classic Watch - Rs. 25,000')" class="btn-outline">Buy Now</button>
-            </div>
+            <!-- Add your products here later -->
+            <p style="color: #999;">Scroll down to add your products...</p>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>Lumina offers handcrafted jewelry and premium accessories. We believe in sustainable fashion and timeless designs.</p>
-        <br>
-        <p><strong>Categories:</strong> Vintage, Zircon, Bohemian, Beaded Jewelry | Bags, Others Accessories</p>
+        <h2>Our Story</h2>
+        <p>We believe in timeless designs and handcrafted quality. Each piece is made with love and attention to detail.</p>
     </section>
 
     <!-- Footer -->
     <footer id="contact">
-        <h3>LUMINA</h3>
+        <h3>YOUR BRAND</h3>
         <p>Order via WhatsApp or Email</p>
-        <p>Email: hello@luminajewelry.com</p>
+        <p>Email: hello@yourbrand.com</p>
         <div class="socials">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
