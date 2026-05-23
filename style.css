@@ -7,21 +7,19 @@
 body {
     font-family: 'Playfair Display', serif;
     color: #333;
-    background: #fdfbf7; /* Light vintage cream color */
+    background: #fdfbf7;
 }
 
-/* ===== CINEMATIC HEADER BACKGROUND ===== */
+/* ===== CINEMATIC COLORED HEADER BACKGROUND ===== */
 header {
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(253,251,247,1)),
-                url('https://images.unsplash.com/photo-1573408301185-9146fe634ad0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #0f0f0f 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    position: relative;
 }
 
 header::before {
@@ -31,36 +29,31 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(253,251,247,0.9) 100%);
+    background: radial-gradient(ellipse at center, rgba(212,175,55,0.15) 0%, rgba(0,0,0,0) 70%);
 }
 
-/* ===== VINTAGE NAVIGATION ===== */
+/* ===== NAVIGATION ===== */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background: #fdfbf7;
+    background: #1a1a1a;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    letter-spacing: 5px;
-    color: #1a1a1a;
+    letter-spacing: 8px;
+    color: #d4af37;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
 }
 
-.logo span {
-    color: #d4af37; /* Gold accent */
-}
-
-/* Menu Links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -73,9 +66,9 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 8px 0;
@@ -91,9 +84,9 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: #fdfbf7;
+    background: #1a1a1a;
     min-width: 160px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     z-index: 1;
     top: 100%;
     left: 0;
@@ -106,45 +99,49 @@ nav {
 
 .dropdown-content li {
     padding: 12px 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #333;
 }
 
 .dropdown-content li a {
     font-size: 11px;
     letter-spacing: 1px;
+    color: #fff;
+}
+
+.dropdown-content li:hover a {
+    color: #d4af37;
 }
 
 /* ===== HERO CONTENT ===== */
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 2rem;
-    border: 2px solid rgba(255,255,255,0.3);
-    background: rgba(0,0,0,0.2);
+    padding: 3rem;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    color: #fff;
+    font-size: 4.5rem;
+    color: #d4af37;
     margin-bottom: 1rem;
-    letter-spacing: 8px;
+    letter-spacing: 15px;
     text-transform: uppercase;
     font-weight: 400;
 }
 
 .hero-content p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
     font-family: 'Lato', sans-serif;
-    letter-spacing: 3px;
-    color: #f0f0f0;
+    letter-spacing: 4px;
+    color: #ccc;
+    text-transform: uppercase;
 }
 
 .btn {
     padding: 1rem 3rem;
     background: transparent;
     border: 2px solid #d4af37;
-    color: #fff;
+    color: #d4af37;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
@@ -155,7 +152,7 @@ nav {
 
 .btn:hover {
     background: #d4af37;
-    color: #fff;
+    color: #1a1a1a;
 }
 
 /* ===== SECTIONS ===== */
@@ -171,11 +168,11 @@ section h2 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-weight: 400;
+    color: #1a1a1a;
     position: relative;
     display: inline-block;
 }
 
-/* Vintage underline */
 section h2::after {
     content: '';
     display: block;
@@ -210,24 +207,20 @@ section h2::after {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: #1a1a1a;
-    color: #d4af37;
+    background: #d4af37;
+    color: #1a1a1a;
     padding: 5px 15px;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 .product-card img {
     width: 100%;
     height: 350px;
     object-fit: cover;
-    filter: sepia(10%); /* Vintage touch */
-}
-
-.product-card:hover img {
-    filter: sepia(0%);
 }
 
 .product-card h3 {
@@ -235,6 +228,7 @@ section h2::after {
     margin: 1.5rem 0 0.5rem;
     letter-spacing: 2px;
     font-weight: 500;
+    color: #1a1a1a;
 }
 
 .price {
@@ -291,8 +285,8 @@ footer {
 }
 
 footer h3 {
-    font-size: 1.8rem;
-    letter-spacing: 8px;
+    font-size: 2rem;
+    letter-spacing: 10px;
     margin-bottom: 1rem;
     color: #d4af37;
 }
@@ -319,7 +313,7 @@ footer p {
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
-        letter-spacing: 4px;
+        letter-spacing: 6px;
     }
     
     .nav-links {
@@ -328,5 +322,9 @@ footer p {
     
     .logo {
         font-size: 1.5rem;
+    }
+    
+    header {
+        height: 70vh;
     }
 }
